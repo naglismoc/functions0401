@@ -18,7 +18,26 @@ public class Main {
         String pavarde = "MockevICIiUs";
         String sutvarkytasPilnasVardas = fullName(vardas, pavarde);
         System.out.println(sutvarkytasPilnasVardas);
+
+        int[] nums = {1,5,10};
+        int[][] nums2d =
+                {
+                        {1,5,10,5,15,5},
+                        {4,8,10},
+                        {5,8,3}
+                };
+        System.out.println(nums2d[1][2]);
+
+        for (int i = 0; i < nums2d.length; i++) {
+            for (int a = 0; a < nums2d[i].length; a++) {
+                System.out.print(nums2d[i][a] + " ");
+            }
+            System.out.println();
+        }
+
+
     }
+
 
     public static String fullName(String name, String surname){
         return nameCase(name) + " " + nameCase(surname);
